@@ -16,7 +16,7 @@ const NavBar = () => {
       <nav className=" container py-2 flex items-center sp justify-between">
         <div className="flex items-center space-x-3">
           <Pizza className="text-primary" />
-          <h1>Pizza</h1>
+          <h1 className="text-4xl font-bold text-primary">Pizza</h1>
           <Select>
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="resturents" />

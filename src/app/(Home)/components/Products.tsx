@@ -21,6 +21,8 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 import { Button } from "@/components/ui/button";
+import ToppingList from "./Topping-List";
+
 export type Product = {
   id: string;
   name: string;
@@ -66,7 +68,7 @@ const Products = ({ product }: PropTypes) => {
                     height={300}
                   />
                 </div>
-                <div className=" bg-white w-2/3 pl-6">
+                <div className=" bg-white w-2/3 px-6 py-4">
                   <h2 className="font-bold text-3xl mt-3">{product.name}</h2>
                   <p className="mt-2 ">{product.description}</p>
                   <h4 className="mt-6">choose the pizza </h4>
@@ -156,6 +158,7 @@ const Products = ({ product }: PropTypes) => {
                       </div>
                     </RadioGroup>
                   </div>
+                  <ToppingList />
                 </div>
               </div>
             </DialogContent>
