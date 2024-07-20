@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export default function Home() {
   return (
     <>
@@ -30,6 +31,18 @@ export default function Home() {
               height={400}
             />
           </div>
+        </div>
+      </section>
+      <section>
+        <div className=" container">
+          <Tabs defaultValue="account" className="w-[400px]">
+            <TabsList>
+              <TabsTrigger value="pizza">pizza</TabsTrigger>
+              <TabsTrigger value="cold-drinks">cold-drinks</TabsTrigger>
+            </TabsList>
+            <TabsContent value="pizza">pizza list</TabsContent>
+            <TabsContent value="cold-drinks">cold drinks list</TabsContent>
+          </Tabs>
         </div>
       </section>
     </>
