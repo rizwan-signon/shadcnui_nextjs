@@ -12,8 +12,8 @@ import {
 
 const NavBar = () => {
   return (
-    <header>
-      <nav className=" container bg-white py-2 shadow-2xl flex items-center sp justify-between">
+    <header className="bg-slate-200">
+      <nav className=" container py-2 flex items-center sp justify-between">
         <div className="flex items-center space-x-3">
           <Pizza className="text-primary" />
           <h1>Pizza</h1>
