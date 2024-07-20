@@ -48,10 +48,10 @@ const NavBar = () => {
                 3
               </span>
             </div>
-            <p className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3">
               <Phone />
               <p>03485402441</p>
-            </p>
+            </div>
             <Button className=" bg-primary" variant="outline">
               logout
             </Button>
