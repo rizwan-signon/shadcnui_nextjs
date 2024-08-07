@@ -85,8 +85,8 @@ export default function Home() {
             </TabsList>
             <TabsContent value="pizza">
               <div className="grid grid-cols-4 gap-6">
-                {products.map((product) => (
-                  <Products product={product} />
+                {products.map((product, index) => (
+                  <Products key={index} product={product} />
                 ))}
               </div>
             </TabsContent>
